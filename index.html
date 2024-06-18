@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="index.js"></script>
+</head>
+
+<body>
+
+  <div class="contactForm">
+    <div class="heading">
+      <h1>Contact Form</h1>
+    </div>
+
+    <div class="formBody">
+      <form action="">
+
+        <div class="nameSection">
+          <div class="firstName name">
+            <label for="f_name">First Name *</label>
+            <input type="text" id="f_name" name="f_name" class="nameOne">
+            <p class="field lastNameField" id="field1">This field is required.</p>
+          </div>
+          <div class="last_name name">
+            <label for="L_name">Last Name *</label>
+            <input type="text" id="L_name" name="L_name" class="nameOne">
+            <p class="field lastNameField" id="field2">This field is required.</p>
+          </div>
+        </div>
+
+        <div class="emailAddress">
+          <label for="e_mail">Email Address *</label>
+          <input type="email" id="e_mail" name="e_mail">
+          <p class="field emailField" id="field3">Please enter the valid email address.</p>
+        </div>
+
+        <div class="queryType">
+          <div class="queryPara">
+            <p>Query Type *</p>
+          </div>
+          <div class="processOption">
+            <div class="g_enq">
+              <input type="radio" id="general_Enquiry" name="options" value="General Enquiry" class="r_btn">
+              <label for="general_Enquiry">&nbsp;General Enquiry</label>
+            </div>
+            <div class="su_req">
+              <input type="radio" id="Support_request" name="options" value="Support Request "class="r_btn">
+              <label for="Support_request">&nbsp;Support Request</label>
+            </div>
+          </div>
+          <p class="field queryField" id="field6">Please select the query Type.</p>
+        </div>
+
+        <div class="messageBox">
+          <label for="message">Message *</label> <br>
+          <textarea name="message" id="message" cols="68" rows="7"></textarea>
+          <p class="field messageField" id="field4">This field is required</p>
+        </div>
+
+        <div class="checkBoxSec">
+          <input type="checkbox" id="check_box" name="check_box" value="checked">
+          <label for="check_box" style="cursor: pointer;">&nbsp;&nbsp;I consent to be contacted by the team. *</label>
+          <p class="field consentField" id="field5">To submit this form, Please consent to being contacted.</p>
+        </div>
+
+        <div class="submitBtn">
+          <input type="submit" id="submit" value="submit" style="cursor: pointer;" onclick="formSubmission()">
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
